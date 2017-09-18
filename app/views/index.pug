@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+head
+  meta(charset="UTF-8")
+  meta(name="veiwport", content="width=device-width, initial-scale=1.0")
+  title Our Website
+  link(rel="stylesheet", href="css/libs.css")
+  link(rel="stylesheet", href="css/main.css")
+html(lang="en")
+  body
+    .container-fluid
+      nav.main-nav
+        a(href="#").nav-logo
+          svg(class="svgIcon-use" width="138" height="27" viewBox="0 0 138 27")
+            path( d="M130 27V16.96c0-3.26-.154-5.472-2.437-5.472-1.16 0-2.138.57-2.863 1.512.217.906.3 1.968.3 3.127 0 2.247.036 5.11 0 7.973 0 .472-.046.58.244      .87L127 27h-8V16.96c0-3.297-.461-5.472-2.708-5.472-1.16 0-1.64.653-2.292 1.595V24.1c0 .472-.026.58.3.87L116 27h-8V11.56c0-.47-.07-.579-.36-.905L106 9h8v3.612c.906-2.537 2.437-4.112 5.372-4.112 2.682 0 4.494 1.466 5.255 4.257.834-2.392 3.008-4.257 6.053-4.257 3.588 0 5.32 2.626 5.32 7.627 0 2.392.036 5.11 0 7.973 0 .472.004.652.25.87L138 27h-8zm-27-3.045c0 .472-.149.617.178.906L105 27h-8v-4c-.906 2.465-2.956 4-5.637 4C87.775 27 86 24.39 86 19.461c0-2.391-.036-5 0-7.936 0-.471-.11-.58-.4-.87L84 9h8v9.628c0 3.225.269 5.4 2.298 5.4 1.16 0 2.086-.725 2.702-1.63V11.56c0-.471-.129-.58-.419-.906L95 9h8v14.955zM78.002.25A3.248 3.248 0 0 1 81.25 3.5 3.25 3.25 0 1 1 78.002.25zM75 27V11.56c0-.47.168-.579-.122-.905L73 9h8v15.1c0 .472-.01.678.24.9L83 27h-8zM64 11.706c-.507-.652-1.418-1.123-2.396-1.123-1.957 0-3.842 1.775-3.842 7.03 0 4.93 1.631 6.669 3.66 6.669.907 0 1.853-.436 2.578-1.378V11.706zm6 12.286c0 .47-.026.58.3.87L72 27h-8v-3.697C62.913 25.804 60.951 27 58.632 27 54.5 27 51.5 23.738 51.5 17.795c0-5.582 3.254-9.314 7.784-9.314 2.356 0 3.919 1.123 4.716 2.899V3.878c0-.471-.077-.617-.403-.906L62 1.305 70 .29v23.702zM43.9 16c.037-.471.037-.67.037-.815 0-4.747-.937-5.435-2.437-5.435-1.5 0-2.854.995-2.927 6.25h5.328zm-5.327 1c0 4.711 2.392 6.63 5.183 6.63 2.174 0 4.313-.943 5.509-3.335h.072c-.942 4.566-3.77 6.705-8.01 6.705-4.566 0-8.879-2.755-8.879-9.133 0-6.705 4.277-9.386 9.097-9.386 3.842 0 7.937 1.811 7.937 7.646 0 .109 0 .438-.036.873H38.573zM31.5 27h-12l2.39-2.646c.084-.084.11-.399.11-.87V7l-7.866 20L5.581 8.372C5.364 7.9 5.181 7.285 5 6.777V20.62c0 .58-.035.653.364 1.196L9 27H0l3.64-5.183c.399-.543.36-.616.36-1.196V6.27c0-.617.095-.69-.195-1.051L1 1h8.495l7.355 16.3L23.24 1h8.26l-2.2 2.75c-.326.326-.3.599-.3 1.106v18.629c0 .47.005.75.138.87L31.5 27z")
+        ul.sign-in
+          li
+            a Sign in / Sign up
+      hr
+    .container
+      .row.row-buffer
+        .col-centered
+          .author-block
+            .svg-avatar
+              img(src="https://cdn-images-1.medium.com/fit/c/60/60/1*KsqkCJGgbakpjMlXk14DKA.png")
+              .svg-avatar_wrap(style="width: calc(100% + 12px); height: calc(100% + 12px); top:-6px; left:-6px")
+                svg(viewBox="0 0 114 114" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M7.66922967,32.092726 C17.0070768,13.6353618 35.9421928,1.75 57,1.75 C78.0578072,1.75 96" +
+          ".9929232,13.6353618 106.33077,32.092726 L107.66923,31.4155801 C98.0784505,12.4582656 78.6289015,0.25 57,0.25 C35.3710985,0.25 15.9215495,12.4582656 6.33077033,31.4155801 L7.66922967,32.092726 Z")
+                  path(d="M106.33077,81.661427 C96.9929232,100.118791 78.0578072,112.004153 57,112.004153 C35.9421928,112.004153 17.0070768,100.118791 7.66922967,81.661427 L6.33077033,82.338573 C15.9215495,101.295887 35.3710985,113.504153 57,113.504153 C78.6289015,113.504153 98.0784505,101.295887 107.66923,82.338573 L106.33077,81.661427 Z")
+            .info
+              .name Addy Osmani
+                a(href="#") Follow
+              .content Senior Staff Engineer at Google working with the Chrome team • Creator of TodoMVC, Yeoman, Material De ...
+              .date Oct 4, 2016
+                span    &#183 8 min read
+      .row.row-buffer
+        .col-centered
+          h1 Progressive Web Apps with React.js: Part I — Introduction
+          h2 Progressive Web Apps take advantage of new technologies to bring the best of mobile sites & native apps to users. They’re reliable, fast, and engaging. They originate from a secure origin and load regardless of network state.
+      .row.row-buffer
+        .col-md-8.col-centered
+          img.progressive-img(src="https://cdn-images-1.medium.com/max/800/1*Ms2muRzG4DHE36YU4kX_ag@2x.png")
+      .row.row-buffer
+        .col-centered
+          p.text-after There’s much new in the world of&nbsp
+            a(href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/" target="_blank") Progressive Web Apps
+            |&nbsp(PWAs) and you might be wondering how compatible they are with existing architectures using libraries like&nbsp
+            a(href="https://facebook.github.io/react/" target="_blank") React
+            | &nbspand JS module bundlers like&nbsp
+            a(href="https://webpack.github.io/" data-href="https://webpack.github.io/" target="_blank") Webpack.
+            | &nbspDoes a PWA require a wholesale rewrite? What web performance metrics do you need to keep an eye on? In this series of posts I’ll share my experience turning React-based web apps into PWAs. We’ll also cover why shipping&nbsp
+            em just&nbsp
+            | what users need for a route &amp; throwing out all other scripts are good ideas for fast perf.
+
+          h3 Lighthouse
+          p Let’s begin with a PWA checklist. For this we’ll be using&nbsp
+            a(href="https://github.com/GoogleChrome/lighthouse" target="_blank")
+            strong Lighthouse 
+            |— a tool for auditing&nbsp
+            a(href="https://infrequently.org/2016/09/what-exactly-makes-something-a-progressive-web-app/" target="_blank") an app for PWA features
+            |&nbspand checking your app meets a respectable bar for web performance under emulated mobile conditions. Lighthouse is available as a&nbsp
+            a(href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk" target="_blank") Chrome extension
+            |&nbsp(I use this version of it most often) and a&nbsp
+            a(href="https://github.com/GoogleChrome/lighthouse#install-cli" target="_blank") CLI
+            |&nbsp, both of which present a report that looks a little like this:
+      .row.row-buffer
+        .col-md-11.col-centered
+          img.light-house(src="https://cdn-images-1.medium.com/max/1000/0*EI9JfoDRizcpZolA.")
+      .row.row-buffer
+        .col-centered
+          p The top-level audits Lighthouse runs effectively a collection of modern web best practices refined for a mobile world:
+          ul
+            li
+              strong Network connection is secure
+            li
+              strong User can be prompted to Add to Homescreen
+            li
+              strong Installed web app will launch with custom splash screen
+            li
+              strong App can load on offline/flaky connections
+            li
+              strong Page load performance is fast
+            li
+              strong Design is mobile-friendly
+            li
+              strong Site is progressively enhanced
+            li
+              strong Address bar matches brand colors
+          p Btw, there’s a&nbsp
+            a(href="https://developers.google.com/web/tools/lighthouse/" target="_blank") getting started guide
+            |&nbspfor Lighthouse and it also works over&nbsp
+            a(href="https://github.com/GoogleChrome/lighthouse#lighthouse-w-mobile-devices" target="_blank")
+              br
+              | remote debugging
+            |.&nbspSuper cool.
+          p Regardless of what libraries are in your stack, I want to emphasize that everything in the above list can be accomplished today with a little work. There are caveats however.
+          p
+            strong We know the mobile web is
+            a(href="https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/" target="_blank")
+              strong
+                em &nbspslow.
+          p The web has evolved from a document-centric platform to a first-class application platform. At the same time the bulk of our computing has moved from powerful desktop machines with fast, reliable network connections to relatively underpowered mobile devices with connections that are often
+            em slow, flaky or both.
+            |This is especially true in parts of the world where the next billion users are coming online. To unlock a faster mobile web:
+          ul
+            li
+              strong We need to collectively shift to testing on real mobile devices under realistic network connections&nbsp
+              a(href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/network-conditions?hl=en" target="_blank") (e.g Regular 3G in DevTools)&nbsp
+              |. and&nbsp
+              a(href="https://developers.google.com/web/tools/chrome-devtools/debug/remote-debugging/remote-debugging?hl=en"  target="_blank") chrome://inspect
+              |&nbspand&nbsp
+              a(href="https://www.webpagetest.org/" target="_blank")  WebPageTest
+              a(href="https://www.youtube.com/watch?v=pOynMwTyRgQ&amp;feature=youtu.be" target="_blank") &nbsp(video)
+              |&nbspare your friend. Lighthouse emulates a Nexus 5X with touch events, viewport emulation and a throttled network connection (150ms latency, 1.6Mbps throughput).
+            li
+              strong If the JS libraries you’re using aren’t developed with mobile in mind, you may be running an uphill battle for perf
+              |&nbspwhen it comes to being interactive. We’re ideally aiming for being interactive in under 5 seconds on a representative device so more of that budget for our app code is ❤
+          img(src="https://cdn-images-1.medium.com/max/800/1*Qx7aFIAKWbn11heD--nxwg.png")
+          figcaption With some work, it’s possible to write PWAs with React that
+            em do
+            |perform well on real devices under limited network conditions
+            a(href="https://twitter.com/samccone/status/771786445015035904" dtarget="_blank") &nbspas demonstrated by Housing.com.
+            |We’ll talk about how to achieve this in great
+            strong detail
+            |later on in the&nbsp;series.
+      .row.row-buffer
+        .col-centered
+          p That said, this is an area many libraries are working to improve on and may need to if they’re going to stay viable for performance on physical devices.&nbsp
+            br
+            span.marked Just take a look at the A+ job&nbsp
+              a(href="https://github.com/developit/preact" data-href="https://github.com/developit/preact"  target="_blank") Preact&nbsp
+              |is doing on&nbsp
+              a(href="https://twitter.com/slightlylate/status/770652362985836544" target="_blank") perf with real-world devices.
+          p
+            strong
+              |Open-source React Progressive Web App samples
+          img(src="https://cdn-images-1.medium.com/max/800/0*5tmODLoFjo8A_nnW.")
+          p If you’re after relatively non-trivial examples of PWAs built with React and optimized with Lighthouse, you may be interested in:&nbsp
+            a(href="https://github.com/insin/react-hn" target="_blank")
+              em ReactHN
+            em
+              |&nbsp— a HackerNews client with server-side rendering &amp; offline support or&nbsp
+            a(href="https://github.com/GoogleChrome/sw-precache/tree/master/app-shell-demo" target="_blank")
+              em iFixit&nbsp
+            em
+              |— a hardware repair guide built with React but which uses Redux for state management.
+          p Let’s now walk through what we need to do to check off each item in the Lighthouse report, continuing with React.js specific tips throughout the series.
+      .row.row-buffer
+        .col-centered
+          h3 Network connection is secure
+          h4 Tooling and tips for HTTPS
+        .col-md-10
+          img.image-wrapping(src="https://cdn-images-1.medium.com/max/600/1*xRLobGG8a41wGypF9mKI-A.jpeg")
+          p.pull-left.text-wrapping
+            a(href="https://support.google.com/webmasters/answer/6073543?hl=en" target="_blank") HTTPS
+            |&nbspprevents bad-actors from tampering with communications between your app and the
+            br
+            |browser your users are using and
+            br
+            |you might have read that Google is pushing to&nbsp
+            a(href="http://motherboard.vice.com/read/google-will-soon-shame-all-websites-that-are-unencrypted-chrome-https" target="_blank") shame
+            |&nbspsites that are unencrypted. Powerful
+            br
+        p.col-centered
+          |new web platform APIs, like&nbsp
+          a(href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API" target="_blank") Service Worker
+          |,&nbsp
+          a(href="https://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features" target="_blank") require
+          |&nbspsecure origins via HTTPS but the good news is thanks to services like&nbsp
+          a(href="https://letsencrypt.org/" target="_blank") LetsEncrypt
+          |&nbspproviding free&nbsp
+          a(href="https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/" target="_blank") SSL certificates
+          |&nbspand low-cost options like&nbsp
+          a(href="https://www.cloudflare.com/" target="_blank") Cloudflare
+          |&nbspenabling end-to-end traffic encryption&nbsp
+          a(href="https://www.cloudflare.com/ssl/" target="_blank") for all,
+          |&nbspit’s never been more straight-forward to get this setup.
+        p.col-centered.interval For my personal projects, I usually deploy to
+          a(href="https://cloud.google.com/appengine/" target="_blank") Google App Engine
+          |&nbspwhich supports serving SSL traffic through an appspot.com domain if you add the
+          a(href="https://cloud.google.com/appengine/docs/python/config/appref"  target="_blank") ‘secure’
+          |&nbspparameter to your app.yaml file. For my React apps that need Node.js support for Universal Rendering, I use
+          a(href="https://cloudplatform.googleblog.com/2016/03/Node.js-on-Google-App-Engine-goes-beta.html" target="_blank") Node on App Engine.
+          a(href="https://github.com/blog/2186-https-for-github-pages" target="_blank") Github Pages
+          |&nbspand
+          a(href="https://zeit.co/blog/now-alias" target="_blank") Zeit.co
+          |&nbspalso now support HTTPS.
+        .col-centered.interval
+          img(src="https://cdn-images-1.medium.com/max/800/0*OzD-JvnlDlwVS8d-.")
+          p
+            em The&nbsp
+            a(href="https://developers.google.com/web/updates/2015/12/security-panel?hl=en" target="_blank")
+              em Chrome DevTools Security panel
+            em &nbspallows you to validate issues with security certificates and mixed content errors.
+          p Some more tips to get your site more secure:
+          ul
+            li Upgrade unsecure requests (“HTTP” connections) to “HTTPS” redirecting users as needed. Take a look at&nbsp
+              a(href="https://content-security-policy.com/" target="_blank") Content Security Policy
+              |&nbspand&nbsp
+              a(href="https://googlechrome.github.io/samples/csp-upgrade-insecure-requests/" target="_blank") upgrade-insecure-requests
+            li Update all links referencing “http://” to “https://”. If you rely on third-party scripts or content, talk to them about making their resources available over HTTPS too&nbsp
+            li Use&nbsp
+              a(href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security" target="_blank") HTTP Strict Transport Security</a> (HSTS) headers when serving pages. It’s a directive that forces browsers to only talk to your site in HTTPS.
+          p I’d recommend watching&nbsp
+            a(href="https://developers.google.com/web/shows/cds/2015/deploying-https-the-green-lock-and-beyond-chrome-dev-summit-2015?hl=en" target="_blank") Deploying HTTPS: The Green Lock and Beyond
+            |&nbspand&nbsp
+            a(href="https://developers.google.com/web/shows/google-io/2016/mythbusting-https-squashing-securitys-urban-legends-google-io-2016?hl=en" target="_blank") Mythbusting HTTPS: Squashing security’s urban legends
+            |&nbspfor more.
+          h3 User can be prompted to Add to Homescreen
+          p Next up is customizing the “
+            a(href="https://developer.chrome.com/multidevice/android/installtohomescreen" target="_blank") add to homescreen
+            |” experience for your app (favicons, application name displayed, orientation and more). This is achieved by adding a&nbsp
+            a(href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank") Web Application Manifest.
+            |&nbspI usually find customizing cross-browser (and OS) favicons to involve the most work here, but tools like&nbsp
+            a( href="http://realfavicongenerator.net/" target="_blank") realfavicongenerator.net
+            |&nbsptake a lot of the pain out of the experience.
+          img(src="https://cdn-images-1.medium.com/max/800/0*00LlyQjpgTUPOh0g.")
+          p There’s been much discussion on the “minimum” number of favicons a site needs to just work in most places. Lighthouse&nbsp
+            a( href="https://github.com/GoogleChrome/lighthouse/issues/291" target="_blank") have proposed
+            |&nbspshipping a 192px icon for the homescreen icon and a 512px one for your splashscreen. I personally stick with the output from realfavicongenerator as despite it involving more metatags, I prefer the assurance my bases are all covered.
+          p Some sites may prefer to ship a highly customized favicon per platform. I recommend checking out&nbsp
+            a( href="https://medium.com/dev-channel/designing-a-progressive-web-app-icon-b55f63f9ff6e#.voxq5imjg" target="_blank") Designing a Progressive Web App icon
+            |&nbspfor more guidance on this topic.
+        .col-md-10
+          img.image-wrapping(src="https://cdn-images-1.medium.com/max/600/1*xdyHSM4RdSkeN3-U8O1JKg.png")
+          p.pull-left.text-wrapping With a Web App manifest setup,
+            br
+            |you also get access to&nbsp
+            a( href="https://developers.google.com/web/fundamentals/engage-and-retain/app-install-banners/?hl=en" target="_blank") app&nbsp
+              br
+              |installer banners
+            |, giving you
+            br
+            |a way to natively prompt for users
+            br
+            |to install your PWA if they find themselves engaging with it
+            br
+            |often. It’s also possible to&nbsp
+            a( href="https://developers.google.com/web/fundamentals/engage-and-retain/app-install-banners/?hl=en#deferring_or_cancelling_the_prompt" target="_blank") defer
+            br
+            |&nbspthe prompt until a time when a
+            br
+            |user has a useful interaction
+            br
+            |with your app. Flipkart&nbsp
+            a( href="https://twitter.com/adityapunjani/status/782426188702633984" target="_blank") found
+            br
+            |&nbspthe best time to show the prompt
+            br
+            |was on their order confirmation
+            br
+            |page.
+        .col-centered
+          p
+            a( href="https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps" target="_blank")
+            em The Chrome DevTools Application Panel
+            |supports inspecting your Web App Manifest via Application &gt; Manifest:
+          img(src="https://cdn-images-1.medium.com/max/800/0*-UCHfo1lxUdWUKAD.")
+          p This parses out the favicons listed in your manifest and previews properties like the start URL and theme colors. Btw, there’s a Totally Tooling Tips&nbsp
+            a( href="https://www.youtube.com/watch?v=yQhFmPExcbs&amp;index=11&amp;list=PLNYkxOF6rcIB3ci6nwNyLYNU6RDOU3YyL" target="_blank") episode
+            |&nbspon Web App Manifests if interested&nbsp;;)
+    script(src="js/libs.min.js")
+    script(src="js/main.js")
+
