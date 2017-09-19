@@ -50,6 +50,7 @@ body {
         right: 0;
         color: $green;
         font-size: 14px;
+        text-decoration: none;
       }
     }
     hr{
@@ -81,11 +82,10 @@ body {
       }
       .info{
         width: 640px;
-        padding: 2px 0 2px 2px;
-        //@include flex-column;
-        //justify-content: space-between;
+        padding: 0 20px;
         align-items: center;
         height: 100%;
+        line-height: 1.6;
         .name {
           font-size: 15px;
           a {
@@ -128,7 +128,7 @@ body {
     .image-wrapping{
       width: 525px;
       float: left;
-      margin: 0 40px 0 59px;
+      margin: 0 40px 0 0;
 
       font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
       font-weight: 400;
@@ -145,8 +145,11 @@ body {
       font-size: 21px;
       line-height: 1.58;
       letter-spacing: -.003em;
-      margin: 0;
-      overflow: hidden;
+      margin: 0 0 0 50px;
+
+      @include min-screen(1199px){
+        overflow: hidden;
+      }
     }
     .interval{
       margin-top: 40px;

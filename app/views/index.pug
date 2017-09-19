@@ -12,9 +12,7 @@ html(lang="en")
         a(href="#").nav-logo
           svg(class="svgIcon-use" width="138" height="27" viewBox="0 0 138 27")
             path( d="M130 27V16.96c0-3.26-.154-5.472-2.437-5.472-1.16 0-2.138.57-2.863 1.512.217.906.3 1.968.3 3.127 0 2.247.036 5.11 0 7.973 0 .472-.046.58.244      .87L127 27h-8V16.96c0-3.297-.461-5.472-2.708-5.472-1.16 0-1.64.653-2.292 1.595V24.1c0 .472-.026.58.3.87L116 27h-8V11.56c0-.47-.07-.579-.36-.905L106 9h8v3.612c.906-2.537 2.437-4.112 5.372-4.112 2.682 0 4.494 1.466 5.255 4.257.834-2.392 3.008-4.257 6.053-4.257 3.588 0 5.32 2.626 5.32 7.627 0 2.392.036 5.11 0 7.973 0 .472.004.652.25.87L138 27h-8zm-27-3.045c0 .472-.149.617.178.906L105 27h-8v-4c-.906 2.465-2.956 4-5.637 4C87.775 27 86 24.39 86 19.461c0-2.391-.036-5 0-7.936 0-.471-.11-.58-.4-.87L84 9h8v9.628c0 3.225.269 5.4 2.298 5.4 1.16 0 2.086-.725 2.702-1.63V11.56c0-.471-.129-.58-.419-.906L95 9h8v14.955zM78.002.25A3.248 3.248 0 0 1 81.25 3.5 3.25 3.25 0 1 1 78.002.25zM75 27V11.56c0-.47.168-.579-.122-.905L73 9h8v15.1c0 .472-.01.678.24.9L83 27h-8zM64 11.706c-.507-.652-1.418-1.123-2.396-1.123-1.957 0-3.842 1.775-3.842 7.03 0 4.93 1.631 6.669 3.66 6.669.907 0 1.853-.436 2.578-1.378V11.706zm6 12.286c0 .47-.026.58.3.87L72 27h-8v-3.697C62.913 25.804 60.951 27 58.632 27 54.5 27 51.5 23.738 51.5 17.795c0-5.582 3.254-9.314 7.784-9.314 2.356 0 3.919 1.123 4.716 2.899V3.878c0-.471-.077-.617-.403-.906L62 1.305 70 .29v23.702zM43.9 16c.037-.471.037-.67.037-.815 0-4.747-.937-5.435-2.437-5.435-1.5 0-2.854.995-2.927 6.25h5.328zm-5.327 1c0 4.711 2.392 6.63 5.183 6.63 2.174 0 4.313-.943 5.509-3.335h.072c-.942 4.566-3.77 6.705-8.01 6.705-4.566 0-8.879-2.755-8.879-9.133 0-6.705 4.277-9.386 9.097-9.386 3.842 0 7.937 1.811 7.937 7.646 0 .109 0 .438-.036.873H38.573zM31.5 27h-12l2.39-2.646c.084-.084.11-.399.11-.87V7l-7.866 20L5.581 8.372C5.364 7.9 5.181 7.285 5 6.777V20.62c0 .58-.035.653.364 1.196L9 27H0l3.64-5.183c.399-.543.36-.616.36-1.196V6.27c0-.617.095-.69-.195-1.051L1 1h8.495l7.355 16.3L23.24 1h8.26l-2.2 2.75c-.326.326-.3.599-.3 1.106v18.629c0 .47.005.75.138.87L31.5 27z")
-        ul.sign-in
-          li
-            a Sign in / Sign up
+        a.sign-in(href='#') Sign in / Sign up
       hr
     .container
       .row.row-buffer
@@ -37,10 +35,8 @@ html(lang="en")
         .col-centered
           h1 Progressive Web Apps with React.js: Part I — Introduction
           h2 Progressive Web Apps take advantage of new technologies to bring the best of mobile sites & native apps to users. They’re reliable, fast, and engaging. They originate from a secure origin and load regardless of network state.
-      .row.row-buffer
-        .col-md-8.col-centered
-          img.progressive-img(src="https://cdn-images-1.medium.com/max/800/1*Ms2muRzG4DHE36YU4kX_ag@2x.png")
-      .row.row-buffer
+        .col-centered
+          img.interval(src="https://cdn-images-1.medium.com/max/800/1*Ms2muRzG4DHE36YU4kX_ag@2x.png")
         .col-centered
           p.text-after There’s much new in the world of&nbsp
             a(href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/" target="_blank") Progressive Web Apps
@@ -52,8 +48,8 @@ html(lang="en")
             em just&nbsp
             | what users need for a route &amp; throwing out all other scripts are good ideas for fast perf.
 
-          h3 Lighthouse
-          p Let’s begin with a PWA checklist. For this we’ll be using&nbsp
+          h3.interval Lighthouse
+          p(style='margin-top: 0') Let’s begin with a PWA checklist. For this we’ll be using&nbsp
             a(href="https://github.com/GoogleChrome/lighthouse" target="_blank")
             strong Lighthouse 
             |— a tool for auditing&nbsp
@@ -63,13 +59,13 @@ html(lang="en")
             |&nbsp(I use this version of it most often) and a&nbsp
             a(href="https://github.com/GoogleChrome/lighthouse#install-cli" target="_blank") CLI
             |&nbsp, both of which present a report that looks a little like this:
-      .row.row-buffer
+
         .col-md-11.col-centered
-          img.light-house(src="https://cdn-images-1.medium.com/max/1000/0*EI9JfoDRizcpZolA.")
-      .row.row-buffer
+          img.interval.light-house(src="https://cdn-images-1.medium.com/max/1000/0*EI9JfoDRizcpZolA.")
+          figcaption Results from the Lighthouse Chrome extension
         .col-centered
           p The top-level audits Lighthouse runs effectively a collection of modern web best practices refined for a mobile world:
-          ul
+          ul.interval
             li
               strong Network connection is secure
             li
@@ -79,7 +75,7 @@ html(lang="en")
             li
               strong App can load on offline/flaky connections
             li
-              strong Page load performance is fast
+              strong Page load performance is fast`
             li
               strong Design is mobile-friendly
             li
@@ -135,24 +131,24 @@ html(lang="en")
             strong
               |Open-source React Progressive Web App samples
           img(src="https://cdn-images-1.medium.com/max/800/0*5tmODLoFjo8A_nnW.")
-          p If you’re after relatively non-trivial examples of PWAs built with React and optimized with Lighthouse, you may be interested in:&nbsp
+          p
+            em If you’re after relatively non-trivial examples of PWAs built with React and optimized with Lighthouse, you may be interested in:&nbsp
             a(href="https://github.com/insin/react-hn" target="_blank")
               em ReactHN
             em
-              |&nbsp— a HackerNews client with server-side rendering &amp; offline support or&nbsp
+              |&nbsp— a HackerNews client with server-side rendering &amp; offline a(rt or&nbsp
             a(href="https://github.com/GoogleChrome/sw-precache/tree/master/app-shell-demo" target="_blank")
               em iFixit&nbsp
             em
               |— a hardware repair guide built with React but which uses Redux for state management.
           p Let’s now walk through what we need to do to check off each item in the Lighthouse report, continuing with React.js specific tips throughout the series.
-      .row.row-buffer
-        .col-centered
+        .col-centered.interval
           h3 Network connection is secure
-          h4 Tooling and tips for HTTPS
-        .col-md-10
+          h4.interval Tooling and tips for HTTPS
+        .col-md-10.interval
           img.image-wrapping(src="https://cdn-images-1.medium.com/max/600/1*xRLobGG8a41wGypF9mKI-A.jpeg")
-          p.pull-left.text-wrapping
-            a(href="https://support.google.com/webmasters/answer/6073543?hl=en" target="_blank") HTTPS
+          p.text-wrapping
+            a(href="https://a(rt.google.com/webmasters/answer/6073543?hl=en" target="_blank") HTTPS
             |&nbspprevents bad-actors from tampering with communications between your app and the
             br
             |browser your users are using and
@@ -173,16 +169,17 @@ html(lang="en")
           |&nbspand low-cost options like&nbsp
           a(href="https://www.cloudflare.com/" target="_blank") Cloudflare
           |&nbspenabling end-to-end traffic encryption&nbsp
-          a(href="https://www.cloudflare.com/ssl/" target="_blank") for all,
-          |&nbspit’s never been more straight-forward to get this setup.
+          a(href="https://www.cloudflare.com/ssl/" target="_blank") for all
+          |,&nbspit’s never been more straight-forward to get this setup.
         p.col-centered.interval For my personal projects, I usually deploy to
           a(href="https://cloud.google.com/appengine/" target="_blank") Google App Engine
-          |&nbspwhich supports serving SSL traffic through an appspot.com domain if you add the
+          |&nbspwhich a(rts serving SSL traffic through an appspot.com domain if you add the
           a(href="https://cloud.google.com/appengine/docs/python/config/appref"  target="_blank") ‘secure’
-          |&nbspparameter to your app.yaml file. For my React apps that need Node.js support for Universal Rendering, I use
-          a(href="https://cloudplatform.googleblog.com/2016/03/Node.js-on-Google-App-Engine-goes-beta.html" target="_blank") Node on App Engine.
+          |&nbspparameter to your app.yaml file. For my React apps that need Node.js a(rt for Universal Rendering, I use&nbsp
+          a(href="https://cloudplatform.googleblog.com/2016/03/Node.js-on-Google-App-Engine-goes-beta.html" target="_blank") Node on App Engine
+          |.&nbsp
           a(href="https://github.com/blog/2186-https-for-github-pages" target="_blank") Github Pages
-          |&nbspand
+          |&nbspand&nbsp
           a(href="https://zeit.co/blog/now-alias" target="_blank") Zeit.co
           |&nbspalso now support HTTPS.
         .col-centered.interval
@@ -206,15 +203,15 @@ html(lang="en")
             |&nbspand&nbsp
             a(href="https://developers.google.com/web/shows/google-io/2016/mythbusting-https-squashing-securitys-urban-legends-google-io-2016?hl=en" target="_blank") Mythbusting HTTPS: Squashing security’s urban legends
             |&nbspfor more.
-          h3 User can be prompted to Add to Homescreen
-          p Next up is customizing the “
+          h3.interval User can be prompted to Add to Homescreen
+          p(style='margin: 0') Next up is customizing the “
             a(href="https://developer.chrome.com/multidevice/android/installtohomescreen" target="_blank") add to homescreen
             |” experience for your app (favicons, application name displayed, orientation and more). This is achieved by adding a&nbsp
             a(href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank") Web Application Manifest.
             |&nbspI usually find customizing cross-browser (and OS) favicons to involve the most work here, but tools like&nbsp
             a( href="http://realfavicongenerator.net/" target="_blank") realfavicongenerator.net
             |&nbsptake a lot of the pain out of the experience.
-          img(src="https://cdn-images-1.medium.com/max/800/0*00LlyQjpgTUPOh0g.")
+          img.interval(src="https://cdn-images-1.medium.com/max/800/0*00LlyQjpgTUPOh0g.")
           p There’s been much discussion on the “minimum” number of favicons a site needs to just work in most places. Lighthouse&nbsp
             a( href="https://github.com/GoogleChrome/lighthouse/issues/291" target="_blank") have proposed
             |&nbspshipping a 192px icon for the homescreen icon and a 512px one for your splashscreen. I personally stick with the output from realfavicongenerator as despite it involving more metatags, I prefer the assurance my bases are all covered.
@@ -223,7 +220,7 @@ html(lang="en")
             |&nbspfor more guidance on this topic.
         .col-md-10
           img.image-wrapping(src="https://cdn-images-1.medium.com/max/600/1*xdyHSM4RdSkeN3-U8O1JKg.png")
-          p.pull-left.text-wrapping With a Web App manifest setup,
+          p.text-wrapping(style="right: 0px; position: relative;") With a Web App manifest setup,
             br
             |you also get access to&nbsp
             a( href="https://developers.google.com/web/fundamentals/engage-and-retain/app-install-banners/?hl=en" target="_blank") app&nbsp
@@ -253,12 +250,56 @@ html(lang="en")
         .col-centered
           p
             a( href="https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps" target="_blank")
-            em The Chrome DevTools Application Panel
-            |supports inspecting your Web App Manifest via Application &gt; Manifest:
-          img(src="https://cdn-images-1.medium.com/max/800/0*-UCHfo1lxUdWUKAD.")
+              em The Chrome DevTools Application Panel
+            |&nbspa(rts inspecting your Web App Manifest via Application &gt; Manifest:
+          img.interval(src="https://cdn-images-1.medium.com/max/800/0*-UCHfo1lxUdWUKAD.")
           p This parses out the favicons listed in your manifest and previews properties like the start URL and theme colors. Btw, there’s a Totally Tooling Tips&nbsp
             a( href="https://www.youtube.com/watch?v=yQhFmPExcbs&amp;index=11&amp;list=PLNYkxOF6rcIB3ci6nwNyLYNU6RDOU3YyL" target="_blank") episode
             |&nbspon Web App Manifests if interested&nbsp;;)
+          h3.interval Installed web app will launch with custom
+            br
+            |splash screen
+          p(style="margin: 0") In older versions of Chrome for Android, tapping on a homescreen icon for an app would often take up to 200ms (or multiple seconds in slow sites) for the first frame of the document to be rendered to the screen
+          p During this time, the user would see a white screen, decreasing the perceived performance of your site. Chrome 47 and above&nbsp
+            a(href="https://developers.google.com/web/updates/2015/10/splashscreen?hl=en" target="_blank") a(rt customising a splash screen
+            |&nbsp(based on a background_color, name and icons from the Web App Manifest) used to color the screen until the browser is ready to paint something. This makes your webapp feel a lot closer to “native”.
+          img.interval(src="https://cdn-images-1.medium.com/max/800/0*sQHn9k-t--cNcijL.")
+          p 
+            a(href="http://realfavicongenerator.net/" target="_blank") Realfavicongenerator.net
+            |&nbspalso now a(rts previewing and customising the Splashscreen for your manifest, a handy time saver.
+          p
+            em Note: Firefox for Android and Opera for Android also a(rt the Web Application Manifest, Splash screen and an add to homescreen experience. On iOS, Safari still a(rts customising add to&nbsp
+            a(href="https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html" target="_blank")
+              em &nbsphomescreen icons
+            em  and used to a(rt a&nbsp
+            a(href="https://gist.github.com/tfausak/2222823" target="_blank")
+              em proprietary splashscreen
+            em &nbspimplementation, however this appears to have broken in iOS9. I’ve filed a feature request for Webkit to a(rt the Web App Manifest so.. fingers crossed I guess.
+          h3.interval Design is mobile-friendly
+          p(style="margin: 0") Apps optimized for multiple devices should include a&nbsp
+            a(href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/fundamentals/set-the-viewport?hl=en" target="_blank") meta-viewport in the &lt;head&gt; of their document
+            |&nbsp. This might seem super obvious, but I’ve seen plenty of React projects where folks have neglected to include this. Thankfully&nbsp
+            a(href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/public/index.html#L5" target="_blank") create-react-app
+            |&nbspdoes include a valid meta-viewport by default and Lighthouse will flag if it is missing:
+          pre.interval
+            |&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+          p Although we focus heavily on optimizing the mobile web experience in Progressive Web Apps, this&nbsp
+            a(href="https://www.justinribeiro.com/chronicle/2016/09/10/desktop-pwa-bring-the-goodness/" target="_blank") doesn’t mean desktop should be forgotten
+            |. A well-crafted PWA can work well across a range of viewport sizes, browsers and devices, as demonstrated by Housing.com:
+        .col-md-10.col-centered
+          img(src="https://cdn-images-1.medium.com/max/1000/0*bgAmcKHWLB_DxiRC.")
+        .col-centered
+          p In Part 2 of the series, we’ll look at&nbsp
+            a(href="https://medium.com/@addyosmani/progressive-web-apps-with-react-js-part-2-page-load-performance-33b932d97cf2#.9ebqqaw8k" target="_blank")
+              strong page-load performance with React and Webpack
+            |&nbsp. We’ll dive into code-splitting, route-based chunking and the PRPL pattern for reaching interactivity sooner.
+          p If you’re new to React, I’ve found&nbsp
+            a(href="https://goo.gl/G1WGxU" target="_blank") React for Beginners
+            |&nbspby Wes Bos excellent.
+          p
+            em With thanks to Gray Norton, Sean Larkin, Sunil Pai, Max Stoiber, Simon Boudrias, Kyle Mathews and Owen Campbell-Moore for their reviews.
+
+
     script(src="js/libs.min.js")
     script(src="js/main.js")
 
